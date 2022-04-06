@@ -1,0 +1,15 @@
+Steps:
+1. Get one website's API and be able to get the cheapest flight from that website from one search
+ - https://www.expedia.ca/Flights-Search?flight-type=on&mode=search&trip=roundtrip&leg1=from%3AToronto+%28YYZ+-+Pearson+Intl.%29%2Cto%3AMontreal+%28YMQ+-+All+Airports%29%2Cdeparture%3A20%2F04%2F2022TANYT&options=cabinclass%3Aeconomy&leg2=from%3AMontreal+%28YMQ+-+All+Airports%29%2Cto%3AToronto+%28YYZ+-+Pearson+Intl.%29%2Cdeparture%3A23%2F04%2F2022TANYT&passengers=children%3A0%2Cadults%3A1%2Cseniors%3A0%2Cinfantinlap%3AY&fromDate=20%2F04%2F2022&toDate=23%2F04%2F2022&d1=2022-04-20&d2=2022-04-23
+ - I think ^ in the body of the reqeust you can see the cheapest flight
+2. Create a simple search form such as the one in Expedia where one can search for
+  - Flying from --> Flying to
+  - Start date is a RANGE
+  - End date is a RANGE
+  and when user click on enter be able to use that information to send an API request to the single API we got in step 1
+
+Step two is challengin because the API might not simply take in the name of a destination, it might take in coordinates or
+another format. The date format is also very important here as the API might take the dates in very different formats, need
+to keep an eye out for this and most likely will need to create a class with a lot of different functions that trasnlate the inputs to different formats depending on the API we are sending the data to.
+
+Another difficulty is the mapping, similar to above challenge, we might need to have a dictionary of mapping between say a destination and its coordinates or another value such as its short form ie. Canada --> CAD etc.
