@@ -13,6 +13,7 @@ class App extends React.Component {
       userInputs
     );
 
+    // todo: when we get the top ten cheapest we need to set them as state
     console.log(response);
   };
 
